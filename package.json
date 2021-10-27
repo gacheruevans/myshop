@@ -1,0 +1,31 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "description": "ecommerce application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gacheruevans/myshop.git"
+  },
+  "keywords": [
+    "React",
+    "Ecommerce",
+    "Site"
+  ],
+  "author": "Evans Gacheru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gacheruevans/myshop/issues"
+  },
+  "homepage": "https://github.com/gacheruevans/myshop#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
