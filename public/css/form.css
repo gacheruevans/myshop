@@ -1,0 +1,42 @@
+/***
+ * Author Evans Gacheru Munene
+ * BEM naming convention
+ */
+ .product-form {
+    margin: auto;
+    width: 20rem;
+    max-width: 90%;
+}
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+
+.form-control input {
+    border: 1px solid #00b7ff;
+    border-radius: 1px;
+    font: inherit;
+}
+
+button {
+    background-color: #00b7ff;
+    border: 2px solid #00b7ff;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    
+}
+
+button:hover,
+button:active {
+    background-color: #00ff88;
+    border: 2px solid #00ff88;
+    color: #fff;
+}
