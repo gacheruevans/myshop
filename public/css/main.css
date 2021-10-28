@@ -3,7 +3,9 @@
  */
 @font-face {
     font-family: 'Eina03-Regular';
-    src: url('eina03.woff2') format('woff2');
+    src:url('./@font-face/eina03.woff2') format('woff2'),
+        url('./@font-face/eina03.woff') format('woff'), 
+        url('./@font-face/eina03.ttf') format('truetype');
 }
 body {
     padding: 0;
