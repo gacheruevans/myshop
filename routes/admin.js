@@ -13,7 +13,7 @@ const products = [];
 const users = [];
 
 router.get('/add-product', (req, res, next) => {
-    res.render('add-product', {docTitle: 'Add Product' });
+    res.render('add-product', {pageTitle: 'Add Product', path: '/admin/add-product', adminDash: true });
 });
 
 router.post('/add-product', (req, res, next) => {
@@ -23,7 +23,7 @@ router.post('/add-product', (req, res, next) => {
 
 router.get('/add-user', (req, res, next) => {
     users.push({ name: req.body.name} );
-    res.render('add-user', {docTitle: 'Add User' });
+    res.render('add-user', {pageTitle: 'Add User', path: '/admin/add-user', adminDash: true });
 });
 
 router.post('/register', (req, res, next) => {

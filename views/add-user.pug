@@ -1,35 +1,24 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{docTitle}
-        link(rel="stylesheet", href="/css/main.css")
-        link(rel="stylesheet", href="/css/form.css")
-    body
-        header.main-header
-            nav.main-header__nav 
-                ul.main-header__item-list
-                    li.main-header__item 
-                        a(href="/") Home
-                    li.main-header__item 
-                        a(href="/admin/dashboard") Dashboard
-                    li.main-header__item 
-                        a(href="/admin/add-product") + New Product
-                    li.main-header__item 
-                        a.active(href="/admin/add-user") + New User
-        main
-            .product-form(action="/admin/register", method="POST")
-                div.form-control
-                    label(for="First Name")
-                    input(type="text", name="first_name", id="first_name")
-                    label(for="Last Name")
-                    input(type="text", name="last_name", id="last_name")
-                    label(for="Email")
-                    input(type="email", name="email", id="email")
-                    label(for="Password")
-                    input(type="password", name="password", id="password")
-                    label(for="Confirm Password")
-                    input(type="password", name="confirm_password", id="confirm_password")
-                button.btn(type="submit") Add product    
+extends layouts/main-layout.pug
+
+block styles 
+    link(rel="stylesheet", href="/css/form.css")
+
+block content
+    main
+        form.product-form(action="/admin/register", method="POST")
+            .form-control
+                label(for="First Name") First Name
+                input(type="text", name="first_name", id="first_name")
+            .form-control
+                label(for="Last Name") Last Name
+                input(type="text", name="last_name", id="last_name")
+            .form-control
+                label(for="Email") Email
+                input(type="email", name="email", id="email")
+            .form-control
+                label(for="Password") Password
+                input(type="password", name="password", id="password")
+            .form-control
+                label(for="Confirm Password") Confirm Password
+                input(type="password", name="confirm_password", id="confirm_password")
+            button.btn(type="submit") Add product    

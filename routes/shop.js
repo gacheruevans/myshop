@@ -12,19 +12,19 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     const products = adminData.products;
-    res.render('shop', {prods: products,docTitle: 'Shop' });
+    res.render('shop', {prods: products, pageTitle: 'Shop'});
 });
 
 router.get('/services', (req, res, next) => {
-    res.render('services', {docTitle: 'Services' });
+    res.render('services', {pageTitle: 'Services', path: '/services'});
 });
 
 router.get('/about-us', (req, res, next) => {
-    res.render('about', {docTitle: 'About' });
+    res.render('about', {pageTitle: 'About', path: '/about-us'});
 });
 
 router.get('/facts', (req, res, next) => {
-    res.render('faqs', {docTitle: 'FAQs' });
+    res.render('faqs', {pageTitle: 'FAQs', path: '/facts'});
 });
 
 module.exports = router;
