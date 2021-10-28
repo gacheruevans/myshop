@@ -1,0 +1,35 @@
+//- /***
+ * Author Evans Gacheru Munene
+ */
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="robots", content="noindex, follow")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/404.css")
+    body
+        header.main-header
+            nav.main-header__nav 
+                ul.main-header__item-list
+                    li.main-header__item 
+                        a.active(href="/") Home
+                    li.main-header__item 
+                        a(href="/admin/dashboard") Dashboard
+                    li.main-header__item 
+                        a(href="/admin/add-product") + New Product
+                    li.main-header__item 
+                        a(href="/admin/add-user") + New User
+        main
+            div#notfound
+                div.notfound
+                    div.notfound-404
+                        h3 Oops! Page not found
+                        h1
+                            span 4
+                            span 0
+                            span 4
+                    h2 we are sorry, but the page you requested was not foundrs

@@ -6,23 +6,25 @@ const path = require('path');
 const express = require('express');
 
 const rootDir = require('../utils/path');
+const adminData = require('./admin');
 
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'views', 'shop.html'));
+    const products = adminData.products;
+    res.render('shop', {prods: products,docTitle: 'Shop' });
 });
 
 router.get('/services', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'views', 'services.html'));
+    res.render('services', {docTitle: 'Services' });
 });
 
 router.get('/about-us', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'views', 'about.html'));
+    res.render('about', {docTitle: 'About' });
 });
 
 router.get('/facts', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'views', 'facts.html'));
+    res.render('faqs', {docTitle: 'FAQs' });
 });
 
 module.exports = router;
