@@ -44,6 +44,8 @@ body {
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active  {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffee01;
     border-top: 0.5px solid #fff;
+    background-color: #96969604;
+    color:#fff;
 }
