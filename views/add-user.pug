@@ -1,0 +1,24 @@
+extends layouts/main-layout.pug
+
+block styles 
+    link(rel="stylesheet", href="/css/form.css")
+
+block content
+    main
+        form.product-form(action="/admin/register", method="POST")
+            .form-control
+                label(for="First Name") First Name
+                input(type="text", name="first_name", id="first_name")
+            .form-control
+                label(for="Last Name") Last Name
+                input(type="text", name="last_name", id="last_name")
+            .form-control
+                label(for="Email") Email
+                input(type="email", name="email", id="email")
+            .form-control
+                label(for="Password") Password
+                input(type="password", name="password", id="password")
+            .form-control
+                label(for="Confirm Password") Confirm Password
+                input(type="password", name="confirm_password", id="confirm_password")
+            button.btn(type="submit") Add product    
