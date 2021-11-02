@@ -1,0 +1,68 @@
+/***
+ * Author Evans Gacheru Munene
+ * BEM naming convention
+ */
+ .grid {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+}
+
+.product-item {
+    font-size: 0.5rem;
+    padding: .5rem;
+}
+
+.card__header {
+    font-size: .5rem;
+    padding: .5rem;
+}
+
+.product__title {
+    font-family: inherit;
+}
+
+.card__image  {
+    margin: auto;
+    max-width: 100%;
+}
+
+.card__content  h2 {
+    font-family: inherit;
+    font-size: medium;
+    font-style: none;
+}
+
+.card__content  p {
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-style: none;
+}
+
+.card__actions,
+button.btn {
+    padding: 10px 20px;
+    color: #00b7ff;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s ease-out;
+}
+
+.card__actions button.btn:hover {
+    background-color: darken(#00b7ff, 10%);
+}
+
+.product__price {
+    padding: .5rem;
+    line-height: .6em;
+}
+
+.product__description {
+    padding: .5rem;
+    line-height: .6em;
+}
