@@ -1,4 +1,6 @@
 extends layouts/main-layout.pug
+block styles 
+    link(rel="stylesheet", href="/css/product.css")
 
 block content
     main 
@@ -8,9 +10,9 @@ block content
                     article.card.product-item
                         header.card__header 
                             h1.product__title #{product.title}
-                        div.card__image 
+                        .card__image 
                             img(src="https://st2.depositphotos.com/1105977/5461/i/600/depositphotos_54615585-stock-photo-old-books-on-wooden-table.jpg", alt="A Book") 
-                        div.card__content 
+                        .card__content 
                             h2.product__price Kshs 2,500
                             p.product__description A very interesting book about so many even more great stuff 
                         .card__actions 
